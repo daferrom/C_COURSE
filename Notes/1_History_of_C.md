@@ -79,3 +79,17 @@ AT&T 3B2 / UNIX / FORTRAN
 2000's Linux /MacOS - Java / php / JavaScript
 2010's - Linux ? MacOS - Python / java/ PHP/ Javascript
 
+## Diversity in Computer Science
+
+Book : Unlocking the ClubHouse, Jane Margolis
+Helen J. Spence, Michigan State University. Teach OS. SHe makes the classes Fun.
+
+## C for everybody
+
+- C is the most important programming language you will ever learn.
+- C should not be the first programming language we teach to students
+- You might never write a "professional" line of C during your career
+- Learning C at the right time in your path, is necessary for you to become a master programmer
+- Be patient - do not rush - do not search for solutions to programming.
+- Each exercise is teaching you something and preparing you to learn something much more challenging later in the course.
+
