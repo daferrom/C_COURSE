@@ -27,7 +27,7 @@ IS the determine the amount of memory in advance to some operation and then retu
 - Kerningham and Ritchie knew "garbage collection" was difficult. So they left it out of the C language and put it a run-time library 
 
 - C is relatively C
-- Can be described i a smal lspace.
+- Can be described i a small space.
 - and learned quickly.
 - A compiler of C cna be simple and compact.
 
@@ -53,6 +53,8 @@ BCPL offer those tho with different syntax anticipating structure programming by
 
 - C provides pointers and the ability to do address arithmetic. 
 - The arguments to functions are passed by copying the value of the arguments, and its impossible for the called function to change the actual argument in the caller .
+- to call a function with a reference the pointer may be passed explicitly, and the function may chang the object to which the pointer points. Array names are passed as the location of the origin so array arguments are effectively call by reference.
+
 
 
 
