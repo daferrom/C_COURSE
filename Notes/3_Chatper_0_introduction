@@ -4,15 +4,14 @@
 - Closely associated to Unix System
 - Not tied to a any one operating system or machine-
 - a System programming Language
-- useful for wrtieen OS
+- useful for write OS
 
 -C relatively low language
 
-- The lack of heap or "garbage collection" feature feature C is one of the great strengths of the language at the same time is likely the reason that the average programmer will never develop or mantain a major C application during their career.
-
+- The lack of heap or "garbage collection" feature feature C is one of the great strengths of the language at the same time is likely the reason that the average programmer will never develop or maintain a major C application during their career.
 
 - C provides malloc() and free() that provides a certain amount of memory.
-IS the determine the amount of memory in advance to some operation and then returned to the C runtime library. e,g for converting a JPG image in a PNG>
+Is the determine the amount of memory in advance to some operation and then returned to the C runtime library. e,g for converting a JPG image in a PNG>
 
 - The term "heap" refers to memory  tha manages on our behalf when we need to "borrow" a bit of memory and give it back later.
 
@@ -24,12 +23,12 @@ IS the determine the amount of memory in advance to some operation and then retu
 
 - The more difficult problem after a series of calls to malloc() and free() the heap space becomes fragmented and the clean up is needed. The Clean up is called "garbage collection".
 
-- Kerningham and Ritchie knew "garbage collection" was difficult. So they left it out of the C language and put it a run-time library 
+- Kerningham and Ritchie knew "garbage collection" was difficult. So they left it out of the C language and put it a run-time library.
 
 - C is relatively C
-- Can be described i a small space.
+- Can be described in a small space.
 - and learned quickly.
-- A compiler of C cna be simple and compact.
+- A compiler of C can be simple and compact.
 
 - C programs tend to be efficient enough that there is no compulsion to write assembly language instead. The most obvious example of this is the UNIX OS which is entirely written in C.
 
@@ -37,36 +36,53 @@ IS the determine the amount of memory in advance to some operation and then retu
 
 - The creators of C and UNIX were advocating for minimal set of programming language constructs and more reliance on calling functions in provided runtime libraries to meet programmers use case.
 
--It is independent of any machine architecture.
+- It is independent of any machine architecture.
 
-- Many of the most important ideas of C stem from the considerably older, but still quite vital, language BCPL, developed by Martin Richards. Proceeded indirectly from B which was written by ken Thompson.
+- Many of the most important ideas of C stem from the considerably older, but still quite vital, language BCPL, developed by Martin Richards. Proceeded indirectly from B which was written by Ken Thompson.
 
 - In C fundamental data objects are characters, integers of several sizes, and floating point numbers.
 - There is a hierarchy of derived data types created with pointers, arrays, structures, unions and functions
 
 - C provides the fundamental flow constructions:
-decission making if
-looping wit ha termination test at the top (while, for) 
+	
+decision making if
+looping wit ha termination test at the top (while, for)
 or at the bottom (do) and
-selecting one (swithc)
+selecting one (switch)
 BCPL offer those tho with different syntax anticipating structure programming by several years.
 
-- C provides pointers and the ability to do address arithmetic. 
+- C provides pointers and the ability to do address arithmetic.
+
 - The arguments to functions are passed by copying the value of the arguments, and its impossible for the called function to change the actual argument in the caller .
+
 - to call a function with a reference the pointer may be passed explicitly, and the function may chang the object to which the pointer points. Array names are passed as the location of the origin so array arguments are effectively call by reference.
 
+- Any function can cbe called recursively
+- Local variables are typically "automatic" or created a new with each invocation.
+- Functions definitions can not be nested .
+- The functions of C program may be compiled separately.
+- Variables may be internal to function , external but known on.ly within a single source file , or completely global.
+- Internal variables may be automatic or static.
+- Automatic variables may be placed in registers for increased efficiency. the register is only a hint to the compiler and odes not refer to specific machine registers.
 
+- C is not a strongly type language. is relatively permissive about data conversion.
+- Although it will not convert data types with the wild abandon of PL/I.
+- Existing compilers provide no run-time checking of array subscripts, argument types., etc.
 
+- when a strong type is desirable a separate version of the compiler is used.
+- apply strick check.
+- it detects:
+type mismatches
+inconsistent argument usage
+unused or apparently uninitialized variables.
+potential; portability difficulties.
 
+- Separate lint from C compiler keeps the last one simple and easy too port to a new computer.
+- The lint program was a very portable processing application.
+- It allows to lint program to use more memory.
 
+- "Separation of Concerns" and It is an important principle in Computer Science.
+- By keeping each component simple and focused , we can more easily build, test , and verify each component.
+- UNIX and C showed the benefits of taking a "many small of components" approach to solve an overall set of Problems.
 
-
-
-
-
-
-
-
-
-
-
+- C like any other language has it s blemishes. Nonetheless, C has proven as extremely effective and expressive language for a variety of programming applications.
